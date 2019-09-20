@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <style>
+       
+    </style>
+    <title>Soduko</title>
+</head>
+<body>
+    <div class="wrap-pop">
+        <div class="pop-up">
+            <h1>You Won</h1>
+            <div class="close">close</div>
+        </div>
+    </div>
+    <div class="game">
+    
+    <div class="container"> 
+        <div  class="box 11"></div> <div  class="box 12"></div> <div  class="box 13"></div> <div  class="box 14"></div> <div  class="box 15"></div> <div  class="box 16"></div> <div  class="box 17"></div> <div  class="box 18"></div> <div  class="box 19"></div>
+        <div  class="box 21"></div> <div  class="box 22"></div> <div  class="box 23"></div> <div  class="box 24"></div> <div  class="box 25"></div> <div  class="box 26"></div> <div  class="box 27"></div> <div  class="box 28"></div> <div  class="box 29"></div>
+        <div  class="box 31"></div> <div  class="box 32"></div> <div  class="box 33"></div> <div  class="box 34"></div> <div  class="box 35"></div> <div  class="box 36"></div> <div  class="box 37"></div> <div  class="box 38"></div> <div  class="box 39"></div>
+        <div  class="box 41"></div> <div  class="box 42"></div> <div  class="box 43"></div> <div  class="box 44"></div> <div  class="box 45"></div> <div  class="box 46"></div> <div  class="box 47"></div> <div  class="box 48"></div> <div  class="box 49"></div>
+        <div  class="box 51"></div> <div  class="box 52"></div> <div  class="box 53"></div> <div  class="box 54"></div> <div  class="box 55"></div> <div  class="box 56"></div> <div  class="box 57"></div> <div  class="box 58"></div> <div  class="box 59"></div>
+        <div  class="box 61"></div> <div  class="box 62"></div> <div  class="box 63"></div> <div  class="box 64"></div> <div  class="box 65"></div> <div  class="box 66"></div> <div  class="box 67"></div> <div  class="box 68"></div> <div  class="box 69"></div>
+        <div  class="box 71"></div> <div  class="box 72"></div> <div  class="box 73"></div> <div  class="box 74"></div> <div  class="box 75"></div> <div  class="box 76"></div> <div  class="box 77"></div> <div  class="box 78"></div> <div  class="box 79"></div>
+        <div  class="box 81"></div> <div  class="box 82"></div> <div  class="box 83"></div> <div  class="box 84"></div> <div  class="box 85"></div> <div  class="box 86"></div> <div  class="box 87"></div> <div  class="box 88"></div> <div  class="box 89"></div>
+        <div  class="box 91"></div> <div  class="box 92"></div> <div  class="box 93"></div> <div  class="box 94"></div> <div  class="box 95"></div> <div  class="box 96"></div> <div  class="box 97"></div> <div  class="box 98"></div> <div  class="box 99"></div>
+    </div>
+    <div class="wrap">
+            <div data-value='1' class="btn">1</div>
+            <div data-value='2' class="btn">2</div>
+            <div data-value='3' class="btn">3</div>
+            <div data-value='4' class="btn">4</div>
+            <div data-value='5' class="btn">5</div>
+            <div data-value='6' class="btn">6</div>
+            <div data-value='7' class="btn">7</div>
+            <div data-value='8' class="btn">8</div>
+            <div data-value='9' class="btn">9</div>
+        </div>
+    <div class="go">Check</div>
+
+</div>
+
+    <script src="app.js"></script>
+    <script>
+        for(let i=0;i<40;i++){
+            const b = parseInt(Math.random()*81);
+            const num = parseInt(Math.random()*8+1);
+            const s_box = box[b];
+            s_box.textContent = num;
+            s_box.style.backgroundColor = '#2879FF'
+            s_box.classList.add('unchangable');
+            s_box.style.backgroundColor = 'rgb(24, 79, 167)';
+        }
+        compare(1);
+    </script>
+</body>
+</html>
