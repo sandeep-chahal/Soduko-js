@@ -1,4 +1,5 @@
 # Soduko-js
-Simple 9X9 soduko with javascript
+An interactive 9X9 soduko with javascript.
+No libraries just vanilla js.
 
 demo :> https://spidy.ga/soduko
